@@ -17,7 +17,7 @@ const {
   adLayout?: string | null
   adLayoutKey?: string | null
   adStyle?: Record<string, string>
-  adFullWidthResponsive?: boolean
+  fullWidthResponsive?: boolean
   hideUnfilled?: boolean
   pageUrl?: string | null
   analyticsUacct?: string
@@ -25,7 +25,7 @@ const {
   includeQuery?: boolean
 }>(),
 {
-  adFullWidthResponsive: false,
+  fullWidthResponsive: false,
   adLayout: null,
   adLayoutKey: null,
   pageUrl: null,
@@ -78,7 +78,7 @@ defineExpose({ isUnfilled, updateAd, showAd })
     :data-analytics-domain-name="dataAnalyticsDomainName"
     :data-adtest="dataAdTest"
     :data-adsbygoogle-status="status"
-    :data-ad-full-width-responsive="adFullWidthResponsive"
+    :data-full-width-responsive="fullWidthResponsive"
   />
 </template>
 
